@@ -1,0 +1,218 @@
+{
+  "total_raw_corpus": 51442,
+  "selected_pairs": 12000,
+  "train_pairs_count": 10800,
+  "val_pairs_count": 1200,
+  "src_vocab_size": 3544,
+  "trg_vocab_size": 6000,
+  "language_pair": "English to Marathi (en-mr)",
+  "source": "Tatoeba Bilingual Parallel Corpus",
+  "sample_train_pairs": [
+    {
+      "src_raw": "\"Trust me,\" he said.",
+      "trg_raw": "तो म्हणाला \"माझ्यावर विश्वास ठेव.\"",
+      "src_tokens": [
+        "\"",
+        "trust",
+        "me",
+        ",",
+        "\"",
+        "he",
+        "said",
+        "."
+      ],
+      "trg_tokens": [
+        "तो",
+        "म्हणाला",
+        "\"",
+        "माझ्यावर",
+        "विश्वास",
+        "ठेव",
+        ".",
+        "\""
+      ]
+    },
+    {
+      "src_raw": "My uncle runs a hotel.",
+      "trg_raw": "माझा काका हॉटेल चालवतो.",
+      "src_tokens": [
+        "my",
+        "uncle",
+        "runs",
+        "a",
+        "hotel",
+        "."
+      ],
+      "trg_tokens": [
+        "माझा",
+        "काका",
+        "हॉटेल",
+        "चालवतो",
+        "."
+      ]
+    },
+    {
+      "src_raw": "I was home by myself.",
+      "trg_raw": "मी घरी एकटा होतो.",
+      "src_tokens": [
+        "i",
+        "was",
+        "home",
+        "by",
+        "myself",
+        "."
+      ],
+      "trg_tokens": [
+        "मी",
+        "घरी",
+        "एकटा",
+        "होतो",
+        "."
+      ]
+    },
+    {
+      "src_raw": "The TV was turned on.",
+      "trg_raw": "टीव्ही चालू होता.",
+      "src_tokens": [
+        "the",
+        "tv",
+        "was",
+        "turned",
+        "on",
+        "."
+      ],
+      "trg_tokens": [
+        "टीव्ही",
+        "चालू",
+        "होता",
+        "."
+      ]
+    },
+    {
+      "src_raw": "My house isn't near the station.",
+      "trg_raw": "माझं घर स्टेशनच्या जवळ नाहीये.",
+      "src_tokens": [
+        "my",
+        "house",
+        "is",
+        "not",
+        "near",
+        "the",
+        "station",
+        "."
+      ],
+      "trg_tokens": [
+        "माझं",
+        "घर",
+        "स्टेशनच्या",
+        "जवळ",
+        "नाहीये",
+        "."
+      ]
+    }
+  ],
+  "sample_val_pairs": [
+    {
+      "src_raw": "This is ice.",
+      "trg_raw": "हा बर्फ आहे.",
+      "src_tokens": [
+        "this",
+        "is",
+        "ice",
+        "."
+      ],
+      "trg_tokens": [
+        "हा",
+        "बर्फ",
+        "आहे",
+        "."
+      ]
+    },
+    {
+      "src_raw": "Did you go to church today?",
+      "trg_raw": "आज चर्चला गेलास का?",
+      "src_tokens": [
+        "did",
+        "you",
+        "go",
+        "to",
+        "church",
+        "today",
+        "?"
+      ],
+      "trg_tokens": [
+        "आज",
+        "चर्चला",
+        "गेलास",
+        "का",
+        "?"
+      ]
+    },
+    {
+      "src_raw": "You've really thought of everything.",
+      "trg_raw": "तू खरच सगळ्या गोष्टींचा विचार करून ठेवला आहेस.",
+      "src_tokens": [
+        "you",
+        "have",
+        "really",
+        "thought",
+        "of",
+        "everything",
+        "."
+      ],
+      "trg_tokens": [
+        "तू",
+        "खरच",
+        "सगळ्या",
+        "गोष्टींचा",
+        "विचार",
+        "करून",
+        "ठेवला",
+        "आहेस",
+        "."
+      ]
+    },
+    {
+      "src_raw": "There was a bridge across each river.",
+      "trg_raw": "प्रत्येक नदीवर एक पूल होता.",
+      "src_tokens": [
+        "there",
+        "was",
+        "a",
+        "bridge",
+        "across",
+        "each",
+        "river",
+        "."
+      ],
+      "trg_tokens": [
+        "प्रत्येक",
+        "नदीवर",
+        "एक",
+        "पूल",
+        "होता",
+        "."
+      ]
+    },
+    {
+      "src_raw": "Tom filled the bucket with ice.",
+      "trg_raw": "टॉम बादली बर्फाने भऱली.",
+      "src_tokens": [
+        "tom",
+        "filled",
+        "the",
+        "bucket",
+        "with",
+        "ice",
+        "."
+      ],
+      "trg_tokens": [
+        "टॉम",
+        "बादली",
+        "बर्फाने",
+        "भऱली",
+        "."
+      ]
+    }
+  ]
+}

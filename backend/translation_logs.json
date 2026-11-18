@@ -1,0 +1,48 @@
+{
+  "total_translations": 6,
+  "total_latency_ms": 255.31816482543945,
+  "history": [
+    {
+      "timestamp": "2026-11-18 19:36:52",
+      "src_text": "I am reading a book.",
+      "trg_text": "\u092e\u0940 \u090f\u0915 \u092a\u0941\u0938\u094d\u0924\u0915 \u090f\u0915 \u0906\u0939\u0947 .",
+      "latency_ms": 42.16,
+      "model_type": "Bahdanau Attention"
+    },
+    {
+      "timestamp": "2026-11-18 19:37:39",
+      "src_text": "I am reading a book.",
+      "trg_text": "\u092e\u0940 \u090f\u0915 \u092a\u0941\u0938\u094d\u0924\u0915 \u090f\u0915 \u0906\u0939\u0947 .",
+      "latency_ms": 46.43,
+      "model_type": "Bahdanau Attention"
+    },
+    {
+      "timestamp": "2026-11-18 19:38:10",
+      "src_text": "I am reading a book.",
+      "trg_text": "\u092e\u0940 \u090f\u0915 \u092a\u0941\u0938\u094d\u0924\u0915 \u090f\u0915 \u0906\u0939\u0947 .",
+      "latency_ms": 36.91,
+      "model_type": "Bahdanau Attention"
+    },
+    {
+      "timestamp": "2026-11-18 19:38:49",
+      "src_text": "I am reading a book.",
+      "trg_text": "\u092e\u0940 \u090f\u0915 \u092a\u0941\u0938\u094d\u0924\u0915 \u090f\u0915 \u0906\u0939\u0947 .",
+      "latency_ms": 49.27,
+      "model_type": "Bahdanau Attention"
+    },
+    {
+      "timestamp": "2026-11-18 19:38:49",
+      "src_text": "I am reading a book.",
+      "trg_text": "\u092e\u0940 \u090f\u0915 \u092a\u0941\u0938\u094d\u0924\u0915 \u090f\u0915 \u0906\u0939\u0947 .",
+      "latency_ms": 37.84,
+      "model_type": "Bahdanau Attention"
+    },
+    {
+      "timestamp": "2026-11-18 19:38:49",
+      "src_text": "How are you?",
+      "trg_text": "\u0924\u0941\u092e\u094d\u0939\u0940 \u0915\u093f\u0924\u0940 \u0906\u0939\u0947\u0938 \u0906\u0939\u093e\u0924 \u0915\u093e ?",
+      "latency_ms": 42.71,
+      "model_type": "Bahdanau Attention"
+    }
+  ]
+}

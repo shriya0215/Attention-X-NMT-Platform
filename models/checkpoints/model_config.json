@@ -1,0 +1,14 @@
+{
+  "emb_dim": 128,
+  "hidden_dim": 256,
+  "attn_dim": 128,
+  "src_vocab_size": 3544,
+  "trg_vocab_size": 6000,
+  "pad_idx": 0,
+  "sos_idx": 1,
+  "eos_idx": 2,
+  "unk_idx": 3,
+  "architecture_attention": "Bidirectional LSTM Encoder (2x256) + Bahdanau Additive Attention + LSTM Decoder (256)",
+  "architecture_baseline": "Unidirectional LSTM Encoder (256) + LSTM Decoder (256) without Attention",
+  "last_trained": "2026-11-18 19:46:08"
+}

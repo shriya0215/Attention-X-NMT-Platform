@@ -1,0 +1,59 @@
+{
+  "epochs": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "attention_model": {
+    "name": "Seq2Seq with Bahdanau Attention",
+    "train_loss": [
+      4.8715,
+      3.1662,
+      2.0569,
+      1.4222
+    ],
+    "val_loss": [
+      4.4949,
+      3.7338,
+      3.5094,
+      3.5473
+    ],
+    "val_bleu": [
+      0.02,
+      0.02,
+      0.1,
+      1.56
+    ],
+    "parameters": 8674800
+  },
+  "baseline_model": {
+    "name": "Seq2Seq Baseline (No Attention)",
+    "train_loss": [
+      5.3776,
+      4.7025,
+      4.3861,
+      4.0759
+    ],
+    "val_loss": [
+      5.2179,
+      5.0313,
+      4.867,
+      4.7185
+    ],
+    "val_bleu": [
+      0.0,
+      0.01,
+      0.01,
+      0.01
+    ],
+    "parameters": 3554160
+  },
+  "training_time_seconds": 769.8,
+  "dataset_info": {
+    "train_size": 10800,
+    "val_size": 1200,
+    "src_vocab_size": 3544,
+    "trg_vocab_size": 6000
+  }
+}
