@@ -3,7 +3,7 @@
  * Full Client Application Logic with Online API & GitHub Pages Standalone Fallback
  */
 
-const API_BASE = "";
+const API_BASE = (window.location.protocol === "file:") ? "http://localhost:5000" : "";
 
 // Global state
 const state = {
