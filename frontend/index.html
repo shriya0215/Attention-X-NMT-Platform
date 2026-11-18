@@ -274,6 +274,40 @@
               </span>
               <div id="target-tokens-chips" class="tokens-flow"></div>
             </div>
+
+            <!-- Inline Word Focus Inspector for Translate Tab -->
+            <div id="translate-word-focus-card" class="word-focus-inspector" style="margin-top: 20px;">
+              <div class="inspector-header">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <div class="word-focus-badge">
+                    <span id="trans-focus-target-word">--</span>
+                  </div>
+                  <div>
+                    <h4 style="font-size: 1.1rem; color: #ffffff;">Click Any Word → Understand AI Attention</h4>
+                    <p id="trans-focus-word-position" style="font-size: 0.82rem; color: var(--text-muted);">Token Position #1</p>
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Entropy</div>
+                  <div id="trans-focus-entropy-val" style="font-size: 1.15rem; font-weight: 700; color: var(--primary-cyan);">--</div>
+                </div>
+              </div>
+
+              <!-- Explanation Card (Dual Language Marathi & English) -->
+              <div class="explanation-card">
+                <h5>AI Attention Rationalization & Context Alignment:</h5>
+                <p id="trans-focus-explanation-mr" class="mr-text" style="font-size: 1.05rem; font-weight: 600; color: #38bdf8;">--</p>
+                <p id="trans-focus-explanation-en" style="margin-top: 8px;">--</p>
+              </div>
+
+              <!-- Attention Distribution Bar Chart -->
+              <div style="margin-top: 18px;">
+                <span style="font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                  Attention Weight Allocation Across Source Tokens:
+                </span>
+                <div id="trans-focus-distribution-bars" class="distribution-bars"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

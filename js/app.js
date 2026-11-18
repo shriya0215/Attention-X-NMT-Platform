@@ -555,32 +555,71 @@ async function explainWordAttention(targetIndex) {
 }
 
 function renderWordFocusInspector(data) {
+  // 1. Update Inline Card on Translate Tab
+  const transCard = document.getElementById("translate-word-focus-card");
+  if (transCard) {
+    transCard.style.display = "block";
+    const elWord = document.getElementById("trans-focus-target-word");
+    if (elWord) elWord.textContent = data.target_token;
+    const elPos = document.getElementById("trans-focus-word-position");
+    if (elPos) elPos.textContent = `Token Position #${data.target_index + 1}`;
+    const elEnt = document.getElementById("trans-focus-entropy-val");
+    if (elEnt) elEnt.textContent = `${data.entropy} bits`;
+    const elEn = document.getElementById("trans-focus-explanation-en");
+    if (elEn) elEn.textContent = data.explanation_en;
+    const elMr = document.getElementById("trans-focus-explanation-mr");
+    if (elMr) elMr.textContent = data.explanation_mr;
+
+    const transBars = document.getElementById("trans-focus-distribution-bars");
+    if (transBars) {
+      transBars.innerHTML = "";
+      data.ranked_attention.forEach(item => {
+        const row = document.createElement("div");
+        row.className = "bar-row";
+        row.innerHTML = `
+          <div class="bar-label" title="${escapeHtml(item.token)}">${escapeHtml(item.token)}</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: ${item.percent}%;"></div>
+          </div>
+          <div class="bar-val">${item.percent}%</div>
+        `;
+        transBars.appendChild(row);
+      });
+    }
+  }
+
+  // 2. Update Card on Attention Lab Tab
   const inspector = document.getElementById("word-focus-card");
-  if (!inspector) return;
+  if (inspector) {
+    inspector.style.display = "block";
+    const elWord = document.getElementById("focus-target-word");
+    if (elWord) elWord.textContent = data.target_token;
+    const elPos = document.getElementById("focus-word-position");
+    if (elPos) elPos.textContent = `Token Position #${data.target_index + 1}`;
+    const elEnt = document.getElementById("focus-entropy-val");
+    if (elEnt) elEnt.textContent = `${data.entropy} bits`;
+    const elEn = document.getElementById("focus-explanation-en");
+    if (elEn) elEn.textContent = data.explanation_en;
+    const elMr = document.getElementById("focus-explanation-mr");
+    if (elMr) elMr.textContent = data.explanation_mr;
 
-  inspector.style.display = "block";
-  document.getElementById("focus-target-word").textContent = data.target_token;
-  document.getElementById("focus-word-position").textContent = `Token Position #${data.target_index + 1}`;
-  document.getElementById("focus-entropy-val").textContent = `${data.entropy} bits`;
-
-  document.getElementById("focus-explanation-en").textContent = data.explanation_en;
-  document.getElementById("focus-explanation-mr").textContent = data.explanation_mr;
-
-  const barsWrap = document.getElementById("focus-distribution-bars");
-  barsWrap.innerHTML = "";
-
-  data.ranked_attention.forEach(item => {
-    const row = document.createElement("div");
-    row.className = "bar-row";
-    row.innerHTML = `
-      <div class="bar-label" title="${escapeHtml(item.token)}">${escapeHtml(item.token)}</div>
-      <div class="bar-track">
-        <div class="bar-fill" style="width: ${item.percent}%;"></div>
-      </div>
-      <div class="bar-val">${item.percent}%</div>
-    `;
-    barsWrap.appendChild(row);
-  });
+    const barsWrap = document.getElementById("focus-distribution-bars");
+    if (barsWrap) {
+      barsWrap.innerHTML = "";
+      data.ranked_attention.forEach(item => {
+        const row = document.createElement("div");
+        row.className = "bar-row";
+        row.innerHTML = `
+          <div class="bar-label" title="${escapeHtml(item.token)}">${escapeHtml(item.token)}</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: ${item.percent}%;"></div>
+          </div>
+          <div class="bar-val">${item.percent}%</div>
+        `;
+        barsWrap.appendChild(row);
+      });
+    }
+  }
 }
 
 /* ==========================================================================
